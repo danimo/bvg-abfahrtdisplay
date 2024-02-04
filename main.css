@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+  color: #ccc;
+  background-color: #061350;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+}
+
+.departure {
+  min-width: 60%;
+}
+
+.tableHeader th {
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.product {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 2px;
+}
+
+.tram {
+  background-color: rgb(190, 20, 20);
+}
+
+.bus {
+  background-color: rgb(149, 39, 110);
+}
+
+.subway {
+  background-color: rgb(17, 93, 145);
+}
+
+.regional {
+  background-color: rgb(226, 0, 25);
+}
+
+.express {
+  background-color: rgb(125, 129, 133);
+}
+
+.ferry {
+  background-color: rgb(82, 141, 186);
+}
+
+.suburban {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 10px;
+  background-color: rgb(64, 131, 53);
+}
+
+.delayEarly {
+  color: green;
+}
+
+.delayLate {
+  color: red;
+}
+
+.now {
+  padding-left: 1ch;
+  animation: blinker 2s ease-in-out infinite;
+}
+
+@keyframes blinker {
+50% {
+    opacity: 0;
+  }
+}
+
+.min {
+  display: inline-block;
+  width: 2ch;
+  text-align: right;
+}
