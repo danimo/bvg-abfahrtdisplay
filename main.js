@@ -1,8 +1,13 @@
-setTimeout(function() {
+setInterval(function() {
+  console.log("reloading time table...")
   getTimeTable();
-}, 1000 * 10);
+}, 1000 * 30);
 
 let stop = {};
+
+window.addEventListener('load', function() {
+  getStop();
+});
 
 function formatDelay(delay) {
   if (Math.round(delay) === 0) {
