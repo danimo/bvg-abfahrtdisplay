@@ -54,9 +54,8 @@ function createLineElement(line) {
 }
 
 async function getStop() {
-  //const queryString = "wedekindstr";
-  const queryString = "warschauer+str+gruenberger+str";
-  //const queryString = "Hbf";
+  const searchParams = new URLSearchParams(window.location.search);
+  const queryString = searchParams.get("station") ?? "Berlin Hbf";
   const response = await fetch(`https://v6.bvg.transport.rest/locations?query=${queryString}&results=1&?linesOfStops=true`);
   const json = await response.json();
   stop = json[0];
